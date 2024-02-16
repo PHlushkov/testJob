@@ -1,0 +1,22 @@
+@use "sass:math";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap');
+@import "./reset";
+@import "./main-info";
+@import "./comments";
+@import "./footer";
+
+// Button
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+//container 
+.container {
+    max-width: 1520px + 15px * 2;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}

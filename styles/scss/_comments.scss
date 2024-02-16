@@ -1,0 +1,214 @@
+.main-comments{
+    padding: 30px 20px 25px 20px;
+    max-width: 520px;
+    width: 100%;
+    height: 100%;
+    background-color: #272727;
+    &__input{
+        background-color: #AAAAAA1A;
+        max-width: 480px;
+        min-height: 118px;
+        width: 100%;
+        height: 100%;
+        textarea {
+            word-wrap: break-word;
+            overflow: auto;
+            resize: none;
+            background-color: transparent;
+            color: #FFFFFFB2;
+            border: none;
+            outline: none;
+            padding-left: 20px;
+            padding-top: 20px;
+            border: none;
+            width: 100%;
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 400;
+        }
+    }
+    &__enter{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__list{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        display: flex;
+        gap: 24px;
+    }
+    &__li{
+        img{
+            width: 100%;
+            max-width: 36px;
+        }
+    }
+
+    &__name{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &-title{
+            color: #fff;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        &-form{
+            display: flex;
+            justify-content: space-between;
+            input{
+                width: 100%;
+                max-width: 417px;
+                padding: 15px 20px;
+                background: #AAAAAA1A;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+                border: none;
+                outline: none;
+            }
+            img{
+                cursor: pointer;
+                width: 100%;
+                max-width: 36px;
+            }
+        }
+        &-button{
+            width: 100%;
+            color: #fff;
+            background: #5600E1;
+            padding: 14px 0px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+
+    &__comments{
+        margin-top:30px ;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__user-info{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    &__user-name{
+        color: #fff;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    &__user-lastActive{
+        padding-top: 8px;
+        color: #FFFFFF80;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    &__user-comment{
+        padding-top: 15px;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    &__user-navigation{
+        margin-top: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__user-btn{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img{
+            width: 100%;
+            max-width: 18px;
+        }
+        span{
+            color: #FFFFFF80;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+
+    &__user-grade{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    &__user-like,
+    &__user-dislike{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img{
+            width: 100%;
+            max-width: 14.67px;
+        }
+        span{
+           color: #fff;
+           font-weight: 400;
+           font-size: 14px; 
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .main-comments{
+        max-width: none;
+        &__name-form{
+            justify-content: flex-start;
+            gap: 20px;
+        }
+        &__name-button{
+            max-width: 417px;
+        }
+        &__user-navigation{
+            justify-content: flex-start;
+            gap: 50px;
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .main-comments{
+        &__title,
+        &__name-title{
+            font-size: 14px;
+        }
+        &__name-form{
+            img{
+                display: none;
+            }
+            input{
+                max-width: none;
+            }
+        }
+        &__name-button{
+            max-width: none;
+        }
+
+        &__user-name{
+            font-size: 16px;
+
+        }
+        &__user-lastActive{
+            font-size: 12px;
+        }
+        &__user-comment{
+            font-size: 16px;
+        }
+        &__user-navigation{
+            flex-wrap: wrap;
+        }
+        
+
+    }
+}
